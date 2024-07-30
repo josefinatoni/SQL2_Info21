@@ -7,7 +7,7 @@
 
 ## Logical view of database model
 
-![SQL2](./misc/images/SQL2.png)
+![SQL2](./images/SQL2.png)
 *Все поля при описании таблиц перечислены в том же порядке, что и на схеме.*
 
 #### Таблица Peers

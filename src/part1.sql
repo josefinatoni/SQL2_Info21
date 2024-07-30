@@ -113,16 +113,16 @@ AS $$
 $$ LANGUAGE plpgsql;
 
                                                -- put your own file path here
-CALL ImportData('peers', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/peers.csv');
-CALL ImportData('tasks', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/tasks.csv');
-CALL ImportData('checks', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/checks.csv');
-CALL ImportData('friends', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/friends.csv');
-CALL ImportData('p2p', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/P2P.csv');
-CALL ImportData('recommendations', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/recommendations.csv');
-CALL ImportData('timetracking', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/time_tracking.csv');
-CALL ImportData('transferredpoints', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/transferred_points.csv');
-CALL ImportData('verter', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/verter.csv');
-CALL ImportData('xp', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/dataset_sql/xp.csv');
+CALL ImportData('peers', '/Users/' || current_user || '/SQL2_Info21/dataset/peers.csv');
+CALL ImportData('tasks', '/Users/' || current_user || '/SQL2_Info21/dataset/tasks.csv');
+CALL ImportData('checks', '/Users/' || current_user || '/SQL2_Info21/dataset/checks.csv');
+CALL ImportData('friends', '/Users/' || current_user || '/SQL2_Info21/dataset/friends.csv');
+CALL ImportData('p2p', '/Users/' || current_user || '/SQL2_Info21/dataset/P2P.csv');
+CALL ImportData('recommendations', '/Users/' || current_user || '/SQL2_Info21/dataset/recommendations.csv');
+CALL ImportData('timetracking', '/Users/' || current_user || '/SQL2_Info21/dataset/time_tracking.csv');
+CALL ImportData('transferredpoints', '/Users/' || current_user || '/SQL2_Info21/dataset/transferred_points.csv');
+CALL ImportData('verter', '/Users/' || current_user || '/SQL2_Info21/dataset/verter.csv');
+CALL ImportData('xp', '/Users/' || current_user || '/SQL2_Info21/dataset/xp.csv');
 
 CREATE OR REPLACE PROCEDURE ExportData(IN table_name varchar, IN file_path varchar)
 AS $$
@@ -131,13 +131,13 @@ AS $$
     END;
 $$ LANGUAGE plpgsql;
                                                -- put your own file path here
-CALL ExportData('peers', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_peers.csv');
-CALL ExportData('tasks', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_tasks.csv');
-CALL ExportData('checks', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_checks.csv');
-CALL ExportData('friends', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_friends.csv');
-CALL ExportData('p2p', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_P2P.csv');
-CALL ExportData('recommendations', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_recommendations.csv');
-CALL ExportData('timetracking', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_time_tracking.csv');
-CALL ExportData('transferredpoints', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_transferred_points.csv');
-CALL ExportData('verter', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_verter.csv');
-CALL ExportData('xp', '/Users/' || current_user || '/SQL2_Info21_v1.0-2/src/myset_sql/exported_xp.csv');
+CALL ExportData('peers', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_peers.csv');
+CALL ExportData('tasks', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_tasks.csv');
+CALL ExportData('checks', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_checks.csv');
+CALL ExportData('friends', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_friends.csv');
+CALL ExportData('p2p', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_P2P.csv');
+CALL ExportData('recommendations', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_recommendations.csv');
+CALL ExportData('timetracking', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_time_tracking.csv');
+CALL ExportData('transferredpoints', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_transferred_points.csv');
+CALL ExportData('verter', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_verter.csv');
+CALL ExportData('xp', '/Users/' || current_user || '/SQL2_Info21/myset_sql/exported_xp.csv');
